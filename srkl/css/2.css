@@ -1,0 +1,33 @@
+ body{
+	
+	background-color: #D7AC8B;
+	}
+	
+	#div1{ 
+	
+	width:450px;
+	height:405px;
+	margin:auto auto  ;	
+	position:absolute;
+	left:30%;
+	top:20%;
+	}
+	#btn1{
+		
+		position: absolute;
+		left:20%;
+		bottom:2px;
+	
+		
+		}
+	#btn2{
+		
+		position: absolute;
+		right:10%;
+		bottom:2px;
+	
+		}
+	#small{ display:none;}
+	#c1, #c2,#c3,#c4,#c5,#c6,#c7,#lazhu1,#lazhu2{transition-timing-function:linear;
+ transition: transform  2s;}
+
