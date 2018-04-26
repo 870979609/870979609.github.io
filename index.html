@@ -215,7 +215,7 @@ window.requestAnimFrame = ( function() {
 })();
 var canvas = document.getElementById( 'canvas' ),
 		ctx = canvas.getContext( '2d' ),
-		cw = window.innerWidth,
+		cw = window.innerWidth + 150,
 		ch = window.innerHeight,
 		fireworks = [],
 		particles = [],
@@ -228,7 +228,7 @@ var canvas = document.getElementById( 'canvas' ),
 		mx,
 		my;
 		
-canvas.width = cw +150;
+canvas.width = cw ;
 canvas.height = ch ;  
 
 function random( min, max ) {
