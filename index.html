@@ -2,8 +2,8 @@
 <html>
   <head>
 	
-
-    <title>À²À²À²À²</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>å•¦å•¦å•¦å•¦</title>
  
     <meta name="viewport" content="width=device-width, initial-scale=1">
    <script src="js/jquery-3.2.1.js"></script>
@@ -152,16 +152,16 @@ $(function(){$("#btn1").click();});
 
 
 
-<button id="btn1" class="btn btn-lg ">ÉúÈÕ¿ìÀÖ</button>
+<button id="btn1" class="btn btn-lg ">ç”Ÿæ—¥å¿«ä¹</button>
 
 
 
-<button id="btn2" class="btn  btn-lg btn-danger ">&nbsp;&nbsp;¶ÅµtÁÕ&nbsp;&nbsp;</button>
+<button id="btn2" class="btn  btn-lg btn-danger ">&nbsp;&nbsp;æœç¥ç³&nbsp;&nbsp;</button>
 </div>
 
 
-  <!-- µÚ¶ş´Î»­Í¼
-  1µ°¸â
+  <!-- ç¬¬äºŒæ¬¡ç”»å›¾
+  1è›‹ç³•
   <svg width="640" height="480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<rect id="c1" x="175" y="283" width="194" height="8" fill="#FFFFFF" stroke="#000000" transform="matrix(1,0,0,1,-27,15)" xmlns="http://www.w3.org/2000/svg" />
 	
@@ -176,7 +176,7 @@ $(function(){$("#btn1").click();});
 	<path id="lazhu2" d="M210 169L209 207L219 207L221 169L210 169Z" fill="#66FFCC" stroke="#FFFFFF" transform="matrix(0.61,0,0,1,86.85,21)" xmlns="http://www.w3.org/2000/svg" />
 </svg>
   
-  2 ¶Å
+  2 æœ
   
   <svg width="640" height="480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<rect id="c1" x="175" y="283" width="194" height="8" fill="#FFFFFF" stroke="#000000" transform="matrix(1,0,0,1,-12,16)" xmlns="http://www.w3.org/2000/svg" />
@@ -215,9 +215,9 @@ var canvas = document.getElementById( 'canvas' ),
 		fireworks = [],
 		particles = [],
 		hue = 120,
-		limiterTotal = 5,   //µã»÷¼ä¸ô
+		limiterTotal = 5,   //ç‚¹å‡»é—´éš”
 		limiterTick = 0,
-		timerTotal = 20,          //Ëæ»ú¼ä¸ô
+		timerTotal = 20,          //éšæœºé—´éš”
 		timerTick = 0,
 		mousedown = false,
 		mx,
@@ -250,13 +250,13 @@ function Firework( sx, sy, tx, ty ) {
 	this.distanceToTarget = calculateDistance( sx, sy, tx, ty );
 	this.distanceTraveled = 0;
 	
-	this.coordinates = [];//coordinates×ø±ê
+	this.coordinates = [];//coordinatesåæ ‡
 	this.coordinateCount = 3;
 	
 	while( this.coordinateCount-- ) {
 		this.coordinates.push( [ this.x, this.y ] );
 	}
-	this.angle = Math.atan2( ty - sy, tx - sx );//·µ»ØÓÉxÖáµ½µã(x,y)µÄ½Ç¶È(ÒÔ»¡¶ÈÎªµ¥Î»)
+	this.angle = Math.atan2( ty - sy, tx - sx );//è¿”å›ç”±xè½´åˆ°ç‚¹(x,y)çš„è§’åº¦(ä»¥å¼§åº¦ä¸ºå•ä½)
 	this.speed = 2;
 	this.acceleration = 1.05;
 	this.brightness = random( 50, 70 );
@@ -352,7 +352,7 @@ Particle.prototype.draw = function() {
 function createParticles( x, y ) {
 	var particleCount = 100;
 	while( particleCount-- ) {
-		particles.push( new Particle( x, y ) );//ÏßÌõ£¿  ÓÉµãÉä³ö30Ìõ
+		particles.push( new Particle( x, y ) );//çº¿æ¡ï¼Ÿ  ç”±ç‚¹å°„å‡º30æ¡
 	}
 }
 
@@ -370,19 +370,19 @@ function loop() {
 	var i = fireworks.length;
 	while( i-- ) {
 		fireworks[ i ].draw(  );                         ;
-		fireworks[ i ].update( i );//µ½´ïÏÂÒ»¸öÄ¿±êµã
+		fireworks[ i ].update( i );//åˆ°è¾¾ä¸‹ä¸€ä¸ªç›®æ ‡ç‚¹
 	}
 	
 	var i = particles.length;
 	while( i-- ) {
 		particles[ i ].draw();
-		particles[ i ].update( i );//Õ¨¿ª
+		particles[ i ].update( i );//ç‚¸å¼€
 	}
 	
 	if( timerTick >= timerTotal ) {
-		if( !mousedown ) {//Ã»ÓĞµã»÷Ê±Ëæ»úÑÌ»¨
+		if( !mousedown ) {//æ²¡æœ‰ç‚¹å‡»æ—¶éšæœºçƒŸèŠ±
 			fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch  ) ) );
-			timerTick = 0;//¼ä¸ô ¿ØÖÆÑÌ»¨³öÏÖµÄÆµÂÊ
+			timerTick = 0;//é—´éš” æ§åˆ¶çƒŸèŠ±å‡ºç°çš„é¢‘ç‡
 		}
 	} else {
 		timerTick++;
