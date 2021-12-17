@@ -12,7 +12,37 @@
  
 <script>
 
+$(document).ready(function(e) {
+$(function(){$("#btn1").click();});
+    $("#btn1").click(function(e) {
+ $("#c1").css({"transform":"matrix(1,0,0,1,-27,5)"});
+    $("#c2").css({"transform":"matrix(1,0,0,1,2,18)"});
+	  $("#c3").css({"transform":"matrix(1,0,0,0.36,11,178.76)"});
+	    $("#c4").css({"transform":"matrix(1,0,0,0.862,-9,18.871)"});
+		  $("#c5").css({"transform":"matrix(1,0,0,0.32,30,171.797)"});
+		    $("#c6").css({"transform":"matrix(1,0,0,0.58,20,94.751)"});
+			  $("#c7").css({"transform":"matrix(1,0,0,1,-216,67)"});
+			    $("#lazhu1").css({"transform":"matrix(0.62,0,0,1,126.3,22)"});
+					$("#lazhu2").css({"transform":"matrix(0.61,0,0,1,86.85,21)"});
+						$("#small").css({"display":"inline"});
+						$(".zhuhuo").css({"visibility":"visible","animation": "fuego 0.2s 2s infinite"});
+});
 
+  $("#btn2").click(function(e) {
+ $("#c1").css({"transform":"matrix(1,0,0,1,-12,16)"});
+    $("#c2").css({"transform":"matrix(1.08,0,0,0.831,78.682,59.049)"});
+	  $("#c3").css({"transform":"matrix(0.013,1,-0.44,0.006,443.713,-12.462)"});
+	    $("#c4").css({"transform":"matrix(0.89,0,0,0.715,112.662,-4.572)"});
+		  $("#c5").css({"transform":"matrix(0.871,0,0,0.31,-7.886,107.91)"});
+		    $("#c6").css({"transform":"matrix(0.013,1.079,-0.55,-0.007,308.133,-14.188)"});
+			  $("#c7").css({"transform":"matrix(-0.999,0.03,-0.03,-0.999,727.009,269.91)"});
+			    $("#lazhu1").css({"transform":"matrix(0.599,-0.38,0.536,0.844,-35.991,143.356)"});
+					$("#lazhu2").css({"transform":"matrix(0.542,0.291,-0.473,0.881,115.475,-9.213)"});
+						$(".zhuhuo").css({"visibility":"hidden","animation":"none"});
+});
+
+
+});
 
 </script>
 
@@ -99,6 +129,35 @@
  <audio autoplay >
  <source src="music/music.mp3" type= "audio/mpeg"/>
  </audio>
+ <canvas id="canvas" ></canvas>
+ 
+  <div id="div1"   >
+  <div class="zhuhuo zhuhuo1" ></div>
+  <div class="zhuhuo zhuhuo2" ></div>
+ <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<rect id="c1" x="175" y="293" width="194" height="8" fill="#FFFFFF" stroke="#000000"   />
+	
+	
+
+	<path id="c4" d="M189 269L314 269C314 269 319 284 315 288C311 292 191 288 191 288C191 288 182 284 189 269Z" fill="#FFFF00" stroke="#996600" xmlns="http://www.w3.org/2000/svg" />
+	<path id="c2" d="M179 259L304 259C304 259 309 274 305 278C301 282 181 278 181 278C181 278 172 274 179 259Z" fill="#996633" stroke="#996600" xmlns="http://www.w3.org/2000/svg" />
+	<path id="c3" d="M169 249L294 249C294 249 299 264 295 268C291 272 171 268 171 268C171 268 162 264 169 249Z" fill="#00FF00" stroke="#996600" xmlns="http://www.w3.org/2000/svg" />
+	<path id="c6" d="M159 239L284 239C284 239 289 254 285 258C281 262 161 258 161 258C161 258 152 254 159 239Z" fill="#996600" stroke="#996600" xmlns="http://www.w3.org/2000/svg" />
+	<path id="c5" d="M149 229L274 229C274 229 279 244 275 248C271 252 151 248 151 248C151 248 142 244 149 229Z" fill="#FF3399" stroke="#996600"  xmlns="http://www.w3.org/2000/svg" />
+	<path id="c7" d="M 397 161 C 387.3333 161.8333 392.6667 163.3333 393 166 C 393.3333 168.6667 395 176 399 177 C 403 178 413.1667 169.8333 417 172 C 420.8333 174.1667 421.1667 183.5 422 190 C 422.8333 196.5 420.5 208 422 211 C 423.5 214 429.5 212 431 208 C 432.5 204 428.3333 193.3333 431 187 C 433.6667 180.6667 442 169.1667 447 170 C 452 170.8333 457 191.8333 461 192 C 465 192.1667 467.8333 174.6667 471 171 C 474.1667 167.3333 477.5 170.3333 480 170 C 482.5 169.6667 483.6667 165.5 486 169 C 488.3333 172.5 489.1667 190.3333 494 191 C 498.8333 191.6667 510.1667 171.8333 515 173 C 519.8333 174.1667 520.6666 199 523 198 C 525.3333 197 528.6666 173 529 167 C 529.3333 161 530.1666 162.6667 525 162 C 519.8333 161.3333 504.5 163.1667 498 163 C 491.5 162.8333 493.8333 161.3333 486 161 C 478.1667 160.6667 465.8333 161 451 161 C 436.1667 161 406.6667 160.1667 397 161 Z" fill="#FFFFFF" stroke="#996600"  xmlns="http://www.w3.org/2000/svg" />
+	<path id="lazhu1" d="M230 169L229 207L239 207L241 169L230 169Z" fill="#66FFCC" stroke="#FFFFFF"  xmlns="http://www.w3.org/2000/svg" />
+	<path id="lazhu2" d="M210 169L209 207L219 207L221 169L210 169Z" fill="#66FFCC" stroke="#FFFFFF"xmlns="http://www.w3.org/2000/svg" />
+	</svg>
+
+
+
+
+<button id="btn1" class="btn btn-lg ">生日快乐</button>
+
+
+
+<button id="btn2" class="btn  btn-lg btn-danger ">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+</div>
 
 
 <script>
